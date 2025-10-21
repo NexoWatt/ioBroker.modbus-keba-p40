@@ -1,6 +1,6 @@
 {
   "name": "iobroker.modbus-keba-p40",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Connect devices oder Modbus protocol to ioBroker",
   "author": {
     "name": "NexoWatt",

@@ -22,7 +22,7 @@ This adapter reads from and writes to the Modbus registers of the Keba P40 wallb
 	### **WORK IN PROGRESS**
 -->
 ## Changelog
-### **WORK IN PROGRESS**
+### 0.1.5 (2025-10-21)
 * (NexoWatt) real publish
 
 ### 0.0.4 (2025-10-08)

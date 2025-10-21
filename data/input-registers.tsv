@@ -1,0 +1,26 @@
+_address	name	description	unit	type	len	factor	offset	formula	role	room	cw	isScale
+222	State	0-Ok,1-Info,2-Warning,3-Fault		int16be	1	1	0		level
+302	EssSoc	SOC Speicher	%	uint16be	1	1	0		level
+303	EssActivePower	AC-seitige Wirkleistung des Speichers inkl. überschüssiger DC-Erzeugung bei Hybrid-Wechselrichter	W	floatbe	2	1	0		level
+309	EssReactivePower	AC-seitige Blindleistung des Speichers	Var	floatbe	2	1	0		level
+315	GridActivePower	NVP Messung	W	floatbe	2	1	0		level
+317	GridMinActivePower	Minimale je gemessene Wirkleistung am Netzanschlusspunkt	W	floatbe	2	1	0		level
+319	GridMaxActivePower	Maximale je gemessene Wirkleistung am Netzanschlusspunkt	W	floatbe	2	1	0		level
+327	ProductionActivePower	Wirkleistung des PV-Ertrags und ggf. Ertrag durch externe Wechselrichter	W	floatbe	2	1	0		level
+329	ProductionMaxActivePower	Maximale je gemessene Wirkleistung der PV-Anlage	W	floatbe	2	1	0		level
+331	ProductionAcActivePower	Wirkleistung der externen AC-Wechselrichter	W	floatbe	2	1	0		level
+339	ProductionDcActualPower	Leistung der DC-Erzeugung des Hybridwechselrichters	W	floatbe	2	1	0		level
+343	ConsumptionActivePower	Wirkleistung des elektrischen Verbrauchs	W	floatbe	2	1	0		level
+345	ConsumptionMaxActivePower	Maximale je gemessene Wirkleistung des elektrischen Verbrauchs	W	floatbe	2	1	0		level
+351	EssActiveChargeEnergy	Kumulierte elektrische Energie der AC-seitigen Speicherbeladung inkl. überschüssige PV-Erzeugung beim Hybrid-Wechselrichter	Wh	doublebe	4	1	0		level
+355	EssActiveDischargeEnergy	Kumulierte elektrische Energie vom Speicher zum Verbrauch über AC-Ausgang des Wechselrichters inkl. PV-Erzeugung	Wh	doublebe	4	1	0		level
+359	GridBuyActiveEnergy	Kumulierte elektrische Energie des Netzbezuges	Wh	doublebe	4	1	0		level
+363	GridSellActiveEnergy	Kumulierte elektrische Energie der Einspeisung	Wh	doublebe	4	1	0		level
+367	ProductionActiveEnergy	Kumulierte elektrische Energie der PV-Erzeugung + Erzeugung externer Wechselrichter	Wh	doublebe	4	1	0		level
+371	ProductionAcActiveEnergy	Kumulierte elektrische Energie der externen Wechselrichter	Wh	doublebe	4	1	0		level
+375	ProductionDcActiveEnergy	Kumulierte elektrische Energie der PV-Erzeugung des Wechselrichters	Wh	doublebe	4	1	0		level
+379	ConsumptionActiveEnergy	Kumulierter elektrischer Verbrauch	Wh	doublebe	4	1	0		level
+383	EssDcChargeEnergy	Kumulierte DC-elektrische Energie der Speicherbeladung	Wh	doublebe	4	1	0		level
+387	EssDcDischargeEnergy	Kumulierte DC-elektrische Energie der Speicherentladung	Wh	doublebe	4	1	0		level
+415	EssDischargePower	Tatsächliche AC-seitige Wirkleistung des Speichers	W	floatbe	2	1	0		level
+417	GridMode	1-On-Grid,2-Off-Grid		int16be	1	1	0		level

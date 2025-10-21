@@ -1,0 +1,5 @@
+_address	name	description	unit	type	len	factor	offset	formula	role	room	poll	wp	cw	isScale
+602	SoC	Ladezustand	%	uint16be	1	1	0				true		false	
+706	ess0/SetActivePowerEquals	Vorgabe Be- und Endladeleistung - Einspeisen + Beladen	W	floatbe	2	1	0				true		false	
+710	ess0/SetActivePowerLessOrEquals	Vorgabe maximaler Entladeleistung	W	floatbe	2	1	0				true		false	
+714	ess0/SetActivePowerGreaterOrEquals	Vorgabe maximaler Beladeleistung	W	floatbe	2	1	0				true		false	

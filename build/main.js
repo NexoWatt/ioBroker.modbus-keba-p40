@@ -40,7 +40,7 @@ const adapterName = JSON.parse((0, node_fs_1.readFileSync)(`${__dirname}/../io-p
 class ModbusAdapter extends modbus_1.default {
     constructor(adapterOptions = {}) {
         const holdingRegs = (0, modbus_1.tsv2registers)('holdingRegs', `${__dirname}/../data/holding-registers.tsv`);
-       // const inputRegs = (0, modbus_1.tsv2registers)('inputRegs', `${__dirname}/../data/input-registers.tsv`);
+        const inputRegs = (0, modbus_1.tsv2registers)('inputRegs', `${__dirname}/../data/input-registers.tsv`);
         // holdingRegs.forEach(holdingReg => {
         //     holdingReg._address = parseInt(holdingReg._address as string, 10) - 40001;
         //     if (holdingReg.formula) {
@@ -65,7 +65,7 @@ class ModbusAdapter extends modbus_1.default {
                 // registerTypeInName: 'data',
             },
             holdingRegs,
-           // inputRegs,
+            inputRegs,
         });
     }
 }

@@ -1,5 +1,21 @@
 _address	name	description	unit	type	len	factor	offset	formula	role	room	poll	wp	cw	isScale
-602	SoC	Ladezustand	%	uint16be	1	1	0				true		false	
-706	ess0/SetActivePowerEquals	Vorgabe Be- und Endladeleistung - Einspeisen + Beladen	W	floatbe	2	1	0				true		false	
-710	ess0/SetActivePowerLessOrEquals	Vorgabe maximaler Entladeleistung	W	floatbe	2	1	0				true		false	
-714	ess0/SetActivePowerGreaterOrEquals	Vorgabe maximaler Beladeleistung	W	floatbe	2	1	0				true		false	
+1008	Current_Import_L1		A	uint32be	2	1	0	x / 1000	level		true	false	false	false
+1010	Current_Import_L1		A	uint32be	2	1	0	x / 1000	value		true	false	false	false
+1012	Current_Import_L1		A	uint32be	2	1	0	x / 1000	value		true	false	false	false
+1014	Serial_Number			uint32be	2	1	0		value		true	false	false	false
+1018	Fimeware_Version			uint32be	2	1	0		value		true	false	false	false
+1020	Power_Active_Import		W	uint32be	2	1	0	x/1000	value		true	false	false	false
+1036	Energy_Active_Import_Register		kWh	uint32be	2	1	0	x / 1000	value		true	false	false	false
+1040	Voltage_L1		V	uint32be	2	1	0		value		true	false	false	false
+1042	Voltage_L2		V	uint32be	2	1	0		value		true	false	false	false
+1044	Voltage_L3		V	uint32be	2	1	0		value		true	false	false	false
+1100	chargeLimit		A	uint32be	2	1	0		value		true	false	false	false
+1500	idTag			uint32be	2	1	0		value		false	false	false	false
+1502	Current_TransactionConsumption		kWh	uint32be	2	1	0	x/1000	switch		true	false	false	false
+1550	numberPhases			uint32be	2	1	0		value		true	false	false	false
+5004	Current_Charging_Limit		mA	uint16be	1	1	0		value		false	true	false	false
+5010	Vorgabe_Ladeenergie	Zielvorgage der geladen wH, danach stoppt die Lsdung	Wh	uint16be	1	1	0		value		false	true	false	false
+5012	Unlock Plug			uint16be	1	1	0		switch		false	true	false	false
+5014	Ladestation_sperren	0 = gesperrt; 1 = Freigeben		uint16be	1	1	0		switch		false	true	false	false
+5050	Phasen switching source	0: Phase switching deactivated ● 1: Phase switching via profiles (OCPP, PV algorithm) ● 2: Rest API direct control (EMS via Rest API or mobile App direct) ● 3: Phase switching via Modbus TCP		uint16be	1	1	0		value		false	true	false	false
+5052	Trigger phase switch	0: 1 phase ● 1: 3 phases		uint16be	1	1	0		switch		false	true	false	false

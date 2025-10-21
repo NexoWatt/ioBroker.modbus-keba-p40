@@ -3,13 +3,13 @@
   "version": "0.1.3",
   "description": "Connect devices oder Modbus protocol to ioBroker",
   "author": {
-    "name": "bluefox",
-    "email": "dogafox@gmail.com"
+    "name": "NexoWatt",
+    "email": "inf@nexowatt.com"
   },
   "contributors": [
     {
-      "name": "bluefox",
-      "email": "dogafox@gmail.com"
+      "name": "NexoWatt",
+      "email": "info@nexowatt.com"
     }
   ],
   "homepage": "https://github.com/ioBroker/ioBroker.modbus-keba-p40",

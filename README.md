@@ -89,7 +89,7 @@ It uses [@iobroker/modbus](https://github.com/ioBroker/modbus) library to read t
 	### **WORK IN PROGRESS**
 -->
 ## Changelog
-### 0.1.1 (2025-10-20)
+### **WORK IN PROGRESS**
 * (NexoWatt) real publish
 
 ### 0.0.4 (2025-10-08)

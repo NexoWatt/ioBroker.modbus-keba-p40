@@ -7,7 +7,7 @@ const adapterName = JSON.parse(readFileSync(`${__dirname}/../io-package.json`, '
 export class ModbusAdapter extends ModbusTemplate {
     public constructor(adapterOptions: Partial<AdapterOptions> = {}) {
         const holdingRegs = tsv2registers('holdingRegs', `${__dirname}/../data/holding-registers.tsv`);
-        const inputRegs = tsv2registers('inputRegs', `${__dirname}/../data/input-registers.tsv`);
+        //const inputRegs = tsv2registers('inputRegs', `${__dirname}/../data/input-registers.tsv`);
 
         // holdingRegs.forEach(holdingReg => {
         //     holdingReg._address = parseInt(holdingReg._address as string, 10) - 40001;
@@ -34,7 +34,7 @@ export class ModbusAdapter extends ModbusTemplate {
                 // registerTypeInName: 'data',
             },
             holdingRegs,
-            inputRegs,
+            //inputRegs,
         });
     }
 }
